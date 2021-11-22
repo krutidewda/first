@@ -1,0 +1,239 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(219, 134, 37);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1; /*isse content background ke upr aajayega*/
+    opacity: 0.4;
+}
+
+/* Logo and image */
+#logo{
+    margin: 14px 43px;
+}
+
+#logo img{
+    height: 40px;
+    margin: 0 auto;
+}
+
+/* List item */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(68, 114, 114);
+    display: block;
+    padding: 2px 13px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(109, 4, 4);
+}
+
+/* Home  */
+
+#home{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    padding: 10px 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("foodHome.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 65%;
+    width: 100%;
+    z-index: -1; /*isse content background ke upr aajayega*/
+    opacity: 0.68;
+}
+
+#home h1{
+    color: rgb(189, 58, 58);
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 3.8rem;
+}
+
+#home p{
+    color: rgba(92, 109, 0, 0.808);
+    background-color: honeydew;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* Services Section */
+#services{
+    margin: 5px;
+    display: flex;
+}
+
+#services .box{
+    border: 1px solid rgb(224, 219, 209);
+    padding: 34px;
+    margin: 10px 28px;
+    border-radius: 28px;
+    background-color: rgba(240, 235, 224, 0.945);
+    box-shadow: 9px 9px 13px rgb(207, 200, 187);
+}
+
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+
+#services-container{
+    margin-top: 5%;
+    align-content: center;
+    padding-top: 0px;
+} 
+
+#services-container h1{
+    margin-top: 89px;
+    padding-top: 50px;
+} 
+
+/* Clients Section */
+#client-section{
+    height: 344px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 123px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("Contact.jpg") no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235, 95, 76);
+    background-color: rgb(100, 97, 96);
+    opacity: 0.6;
+    padding: 6px;   
+    margin: 8px;
+    border-radius: 10px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    margin: 8px;
+    padding: 6px;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9PX 20PX;
+}
+
+/* Utility classes */
+
+html{
+    scroll-behavior: smooth;
+}
+.h-primary{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.6rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    color: rgba(92, 109, 0, 0.808);;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(179, 136, 57, 0.842);
+    margin: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+ 
